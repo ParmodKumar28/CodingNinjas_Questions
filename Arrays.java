@@ -36,7 +36,7 @@ public class Arrays {
 
         // takeInput(arr);
         printArray(arr);
-        // printArray(arr2);
+        printArray(arr2);
         s.close();
     }
 }

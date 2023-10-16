@@ -56,8 +56,7 @@ import java.util.Scanner;
 
 public class CodeBinarySearch {
 
-    public static void takeInput(int arr[], int n) {
-        Scanner s = new Scanner(System.in);
+    public static void takeInput(int arr[], int n,Scanner s) {
         System.out.println("Enter Values Of The Array : ");
         for (int i = 0; i < n; i++) {
             arr[i] = s.nextInt();
@@ -69,11 +68,12 @@ public class CodeBinarySearch {
         System.out.println("Enter Length Of The Array : ");
         int N = s.nextInt();
         int arr[] = new int[N];
-        takeInput(arr, N);
+        takeInput(arr, N,s);
         System.out.println("Enter Target Value Here : ");
         int A = s.nextInt();
         int ans = binarySearch(arr, N, A);
         System.out.println(ans);
+        s.close();
     }
 
     public static int binarySearch(int arr[], int N, int A) {

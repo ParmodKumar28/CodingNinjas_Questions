@@ -29,6 +29,7 @@ public class RevrseStringWordWise {
         }
         String ans = reverseWordWise(str);
         System.out.println(ans);
+        s.close();
     }
 
     public static String reverseWordWise(String str) {

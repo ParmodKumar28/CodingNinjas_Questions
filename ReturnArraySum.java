@@ -35,8 +35,7 @@
 import java.util.Scanner;
 
 public class ReturnArraySum {
-    public static void takeInput(int[] arr) {
-        Scanner s = new Scanner(System.in);
+    public static void takeInput(int[] arr,Scanner s) {
         for (int i = 0; i < arr.length; i++) {
             System.out.print("Enter " + i + "th index Element : ");
             arr[i] = s.nextInt();
@@ -59,10 +58,11 @@ public class ReturnArraySum {
             System.out.println("Enter " + (i + 1) + " Array Length");
             int length = s.nextInt();
             int arr[] = new int[length];
-            takeInput(arr);
+            takeInput(arr,s);
             int sum = arraySum(arr);
             System.out.print(sum + " ");
             System.out.println();
+            s.close();
         }
 
         s.close();

@@ -43,6 +43,7 @@ public class StringPalindrome {
 
         boolean ans = isPlaindrome(str);
         System.out.println(ans);
+        s.close();
     }
 
     public static boolean isPlaindrome(String str)

@@ -44,8 +44,7 @@ public class Sort012 {
         System.out.println();
     }
 
-    public static void takeInput(int arr[], int n) {
-        Scanner s = new Scanner(System.in);
+    public static void takeInput(int arr[], int n,Scanner s) {
         System.out.println("Enter Values Of The Array : ");
         for (int i = 0; i < n; i++) {
             arr[i] = s.nextInt();
@@ -60,10 +59,11 @@ public class Sort012 {
             System.out.print("Enter Length of " + i + " Array : ");
             int n = s.nextInt();
             int arr[] = new int[n];
-            takeInput(arr, n);
+            takeInput(arr, n,s);
             sort(arr, n);
             printArray(arr, n);
             System.out.println();
+            s.close();
         }
     }
 

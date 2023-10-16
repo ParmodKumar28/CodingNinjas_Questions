@@ -53,8 +53,7 @@ import java.util.Scanner;
 
 public class IntersectionOfTwoArrays {
 
-    public static void takeInput(int arr[], int n) {
-        Scanner s = new Scanner(System.in);
+    public static void takeInput(int arr[], int n,Scanner s) {
         System.out.println("Enter Values Of The Array : ");
         for (int i = 0; i < n; i++) {
             arr[i] = s.nextInt();
@@ -69,13 +68,14 @@ public class IntersectionOfTwoArrays {
             System.out.print("Enter Length of " + i + " 1st Array : ");
             int n1 = s.nextInt();
             int arr1[] = new int[n1];
-            takeInput(arr1, n1);
+            takeInput(arr1, n1,s);
             System.out.println("Enter Length of " + i + " 2nd Array : ");
             int n2 = s.nextInt();
             int arr2[] = new int[n2];
-            takeInput(arr2, n2);
+            takeInput(arr2, n2,s);
             findIntersections(arr1, n1, arr2, n2);
             System.out.println();
+            s.close();
         }
     }
 

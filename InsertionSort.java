@@ -38,8 +38,7 @@ import java.util.Scanner;
 
 public class InsertionSort {
 
-    public static void takeInput(int arr[], int n) {
-        Scanner s = new Scanner(System.in);
+    public static void takeInput(int arr[], int n,Scanner s) {
         System.out.println("Enter Values Of The Array : ");
         for (int i = 0; i < n; i++) {
             arr[i] = s.nextInt();
@@ -59,9 +58,10 @@ public class InsertionSort {
         System.out.println("Enter Length Of The Array : ");
         int N = s.nextInt();
         int arr[] = new int[N];
-        takeInput(arr, N);
+        takeInput(arr, N,s);
         insertionSort(arr, N);
         printArray(arr, N);
+        s.close();
     }
 
     public static void insertionSort(int arr[], int N)

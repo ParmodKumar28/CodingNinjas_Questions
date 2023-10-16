@@ -42,6 +42,7 @@ public class AllSubstrings {
             str = "";
         }
         printSubstrings(str);
+        s.close();
     }
 
     public static void printSubstrings(String str) {

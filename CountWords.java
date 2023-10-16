@@ -33,11 +33,12 @@ public class CountWords {
             str = "";
         }
 
-        int ans = CountWords(str);
+        int ans = countWords(str);
         System.out.println(ans);
+        s.close();
     }
 
-    public static int CountWords(String str)
+    public static int countWords(String str)
     {
         int count = 1;
         if(str.length()==0)

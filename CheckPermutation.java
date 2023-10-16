@@ -35,7 +35,7 @@
 // Sample Output 2:
 // false
 
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class CheckPermutation {

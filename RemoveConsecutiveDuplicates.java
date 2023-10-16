@@ -26,8 +26,6 @@
 // xxyyzxx
 // Sample Output 2:
 // xyzx
-
-import java.util.HashSet;
 import java.util.Scanner;
 
 public class RemoveConsecutiveDuplicates {
@@ -37,6 +35,7 @@ public class RemoveConsecutiveDuplicates {
         String str = s.nextLine();
         String ans = removeConsecutiveDuplicates(str);
         System.out.println("Output : " + ans);
+        s.close();
 
     }
 

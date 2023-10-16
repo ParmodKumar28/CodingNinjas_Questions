@@ -51,8 +51,7 @@ import java.util.Scanner;
 
 public class SelectionSort {
 
-    public static void takeInput(int arr[], int n) {
-        Scanner s = new Scanner(System.in);
+    public static void takeInput(int arr[], int n, Scanner s) {
         System.out.println("Enter Values Of The Array : ");
         for (int i = 0; i < n; i++) {
             arr[i] = s.nextInt();
@@ -72,24 +71,20 @@ public class SelectionSort {
         System.out.println("Enter Length Of The Array : ");
         int N = s.nextInt();
         int arr[] = new int[N];
-        takeInput(arr, N);
+        takeInput(arr, N, s);
         selectionSort(arr, N);
         printArray(arr, N);
 
     }
 
-    public static void selectionSort(int arr[], int N)
-    {
+    public static void selectionSort(int arr[], int N) {
         // Time Complexity O(n^2);
-        for(int i=0;i<N;i++)
-        {
+        for (int i = 0; i < N; i++) {
             int min = Integer.MAX_VALUE;
             int minIndex = -1;
-            
-            for(int j=i;j<N;j++)
-            {
-                if(arr[j]<min)
-                {
+
+            for (int j = i; j < N; j++) {
+                if (arr[j] < min) {
                     min = arr[j];
                     minIndex = j;
                 }

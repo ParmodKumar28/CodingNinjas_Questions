@@ -37,8 +37,7 @@ import java.util.Scanner;
 
 public class FindDuplicate {
 
-    public static void takeInput(int arr[], int n) {
-        Scanner s = new Scanner(System.in);
+    public static void takeInput(int arr[], int n,Scanner s) {
         System.out.println("Enter Values Of The Array : ");
         for (int i = 0; i < n; i++) {
             arr[i] = s.nextInt();
@@ -53,10 +52,11 @@ public class FindDuplicate {
             System.out.print("Enter Length of " + i + " Array : ");
             int n = s.nextInt();
             int arr[] = new int[n];
-            takeInput(arr, n);
+            takeInput(arr, n,s);
             int ans = findDuplicate(arr, n);
             System.out.println(ans);
             System.out.println();
+            s.close();
         }
 
     }

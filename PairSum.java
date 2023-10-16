@@ -48,8 +48,7 @@ import java.util.Scanner;
 
 public class PairSum {
 
-    public static void takeInput(int arr[], int n) {
-        Scanner s = new Scanner(System.in);
+    public static void takeInput(int arr[], int n,Scanner s) {
         System.out.println("Enter Values Of The Array : ");
         for (int i = 0; i < n; i++) {
             arr[i] = s.nextInt();
@@ -64,7 +63,7 @@ public class PairSum {
             System.out.print("Enter Length of " + i + " Array : ");
             int n = s.nextInt();
             int arr[] = new int[n];
-            takeInput(arr, n);
+            takeInput(arr, n,s);
             System.out.println("Enter Value Of The X : ");
             int x = s.nextInt();
             int ans = pairSum(arr, n, x);
